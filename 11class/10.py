@@ -1,0 +1,5 @@
+s = input().split()
+a = set(s)
+print(a)
+a = list(a)
+print(s-a)
