@@ -6,3 +6,6 @@ student = {
 
 def reverse(word):
     return word[::-1]
+
+def sum_index(values):
+    return max(values)+min(values)
