@@ -2,11 +2,11 @@ import re
 
 txt = input().lower()
 
-pat = 'decode'
+pat = '(^(https://))|(^(http://))\w+[.]\w+[/]{0,1}'
 
 
-index = re.search(pat, txt)
+index = re.findall(pat, txt)
 if index:
-    print(index.start(), index.end())
+    print(True)
 else:
     print(False)
