@@ -2,7 +2,7 @@ import re
 
 txt = input()
 
-pat = '(" ")|(".")|(",")'
+pat = '\d'
 
 
-print(re.split(pat, txt))
+print(re.sub(pat, ' ', txt))
